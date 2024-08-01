@@ -1,157 +1,174 @@
-/* 通用樣式 */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Noto Sans TC', Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
 }
 
-/* Header */
-.header {
+.header, .footer {
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
-.header h1 {
-    margin: 0;
-    font-size: 2rem;
+.header {
+    top: 0;
 }
 
-.header nav {
-    margin-top: 10px;
+.footer {
+    bottom: 0;
 }
 
-.header nav a {
+.header a, .footer a {
     color: #fff;
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 1rem;
+    margin: 0 10px;
     transition: color 0.3s;
 }
 
-.header nav a:hover {
+.header a:hover, .footer a:hover {
     color: #ff6600;
 }
 
-/* Hero Section */
-.hero {
-    background: url('hero-bg.jpg') no-repeat center center/cover;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-}
-
-.hero-content {
-    text-align: center;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.hero-content h2 {
-    font-size: 2.5rem;
-    margin: 0;
-}
-
-.hero-content p {
-    font-size: 1.2rem;
-    margin: 10px 0;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #ff6600;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-.cta-button:hover {
-    background-color: #cc5200;
-}
-
-/* Container */
 .container {
     width: 80%;
-    margin: 20px auto;
+    margin: 100px auto 20px auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-/* Section */
-.section {
-    margin-bottom: 40px;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.section.visible {
-    opacity: 1;
-    transform: translateY(0);
+    animation: fadeIn 1s ease-in-out;
 }
 
 .section h2 {
     border-bottom: 2px solid #ff6600;
     padding-bottom: 10px;
     margin-bottom: 20px;
-    font-size: 2rem;
 }
 
-/* Footer */
-.footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
+.contact-form {
+    margin-top: 20px;
 }
 
-/* Contact Icons */
-.contact-icons {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.form-group {
+    margin-bottom: 15px;
 }
 
-.contact-icons a {
+.form-group label {
     display: block;
-    margin: 5px 0;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
     color: #fff;
     background-color: #ff6600;
-    border-radius: 50%;
-    padding: 10px;
-    text-align: center;
-    font-size: 24px;
     text-decoration: none;
-    width: 50px;
-    height: 50px;
-    line-height: 30px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
     transition: background-color 0.3s;
 }
 
+.button:hover {
+    background-color: #e65c00;
+}
+
+.hero {
+    background: url('your-image.jpg') center center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin: 0;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contact-icons a {
+    color: #333;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
 .contact-icons a:hover {
-    background-color: #cc5200;
+    color: #ff6600;
 }
 
-.contact-icons .phone {
-    background-color: #34b7f1;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-.contact-icons .line {
-    background-color: #00c300;
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #ff6600;
 }
