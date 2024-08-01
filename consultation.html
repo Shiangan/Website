@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>免費諮詢 - 祥安生命有限公司</title>
+    <title>聯繫我們 - 祥安生命有限公司</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,46 +15,53 @@
             <a href="platform.html">喬安網路平台</a>
             <a href="flower-order.html">花籃訂購</a>
             <a href="fruit-order.html">水果籃訂購</a>
-            <a href="consultation.html">免費諮詢</a>
             <a href="contact.html">聯繫我們</a>
         </nav>
     </header>
-
+    
     <main class="container">
-        <section class="consultation-form">
-            <h2>免費諮詢</h2>
-            <p>我們提供免費的初步諮詢服務，幫助您了解我們的服務和報價。請填寫下面的表單與我們聯繫，我們將在24小時內回覆您。</p>
-            <form action="submit_consultation.php" method="POST">
-                <div class="form-group">
-                    <label for="name">姓名</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">電子郵件</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">電話</label>
-                    <input type="tel" id="phone" name="phone" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">訊息</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="button">提交諮詢</button>
-            </form>
+        <section class="section">
+            <h2>聯繫我們</h2>
+                        <p>如果您有任何問題或需要進一步了解我們的服務，請隨時聯繫我們。我們的客服團隊會在第一時間回覆您。</p>
+            <div class="contact-info">
+                <p>電話：<a href="tel:+0978583699">0978-583-699</a></p>
+                <p>電子郵件：<a href="mailto:info@xiang-an.com">info@xiang-an.com</a></p>
+                <p>地址：台北市中正區某某街道123號</p>
+            </div>
+            <h3>聯繫表單</h3>
+            <div class="contact-form">
+                <form action="submit_contact.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">姓名</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">電子郵件</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">電話</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">訊息</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="button">發送訊息</button>
+                </form>
+            </div>
         </section>
     </main>
-
+    
     <footer class="footer">
         <p>© 2024 祥安生命有限公司. All rights reserved.</p>
     </footer>
-
+    
     <div class="contact-icons">
         <a href="tel:+0978583699" class="phone">📞</a>
         <a href="https://line.me/ti/p/@yourlineid" class="line">LINE</a>
     </div>
-
-    <script src="scripts.js"></script>
+    
+    <script src="script.js"></script>
 </body>
 </html>
