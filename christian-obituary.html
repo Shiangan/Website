@@ -36,18 +36,69 @@
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
         }
         .section h2 {
             border-bottom: 2px solid #003366;
             padding-bottom: 10px;
             margin-bottom: 20px;
             color: #003366;
+            position: relative;
+        }
+        .section h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 4px;
+            background: #ffcc99; /* 淡橙色 */
+            position: absolute;
+            bottom: -10px;
+            left: 0;
         }
         .content {
             line-height: 1.6;
         }
-        .footer p {
-            margin: 0;
+        .photo {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        .photo:hover {
+            transform: scale(1.05);
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #ff6600;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #cc5200;
+        }
+        .map {
+            width: 100%;
+            height: 300px;
+            border: 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        .comments {
+            margin-top: 20px;
+        }
+        .comment {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -69,25 +120,5 @@
         <section class="section">
             <h2>基督教訃聞</h2>
             <div class="content">
-                <p>我們在此謹以基督教的方式，向逝者表達最深切的悼念。以下內容適用於基督教徒的訃聞，旨在以最崇高的方式紀念逝者：</p>
-                <p><strong>姓名：</strong> 李四</p>
-                <p><strong>逝世日期：</strong> 2024年8月1日</p>
-                <p><strong>葬禮日期：</strong> 2024年8月5日</p>
-                <p><strong>追悼詞：</strong> 我們的親愛的李四，您在主的懷抱中，已經得到了永恆的安息。您的一生充滿了對主的愛與服務，我們深信您已在天國得到了榮耀與平安。我們懷著感激與悲痛的心情，向您告別。願主的光輝永遠照耀您。</p>
-                <p><strong>經文引用：</strong> 「我必賜給他永生，他必永不滅亡，誰也不能把他從我的手裡奪去。」（約翰福音 10:28）</p>
-                <p>若您對我們的服務有興趣，請點擊下方按鈕進行登入並查看完整樣式。每則訃聞生成費用為 $100。</p>
-            </div>
-            <a href="login.html" class="button">登入查看樣式</a>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <p>© 2024 祥安生命有限公司. All rights reserved.</p>
-    </footer>
-
-    <div class="contact-icons">
-        <a href="tel:+0978583699" class="phone">📞</a>
-        <a href="https://line.me/ti/p/@yourlineid" class="line">LINE</a>
-    </div>
-</body>
-</html>
+                <img src="images/obituary-photo.jpg" alt="逝者照片" class="photo">
+                <p>我們在此謹以基督教的方式，向逝者表達最深切的悼念。以下內容適用於基督教徒的訃聞，旨在以最崇高的方式紀念逝者：</p​⬤
