@@ -1,3 +1,8 @@
+当然可以！我会调整颜色，使其更深但不至于过于沉重，并引入一些新颜色来丰富视觉效果。以下是更新后的 `styles.css`，包括更深的渐变颜色和新的配色方案。
+
+### 更新版 `styles.css`
+
+```css
 /* 基本重置 */
 * {
     margin: 0;
@@ -9,18 +14,18 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
-    background: #f9f9f9; /* 淡灰色背景 */
+    background: #f3f3f3; /* 轻微的背景色 */
 }
 
 .header {
-    background: linear-gradient(to right, #FFDDC1, #FFABAB); /* 温暖渐变背景 */
-    color: #333;
-    padding: 10px 20px;
+    background: linear-gradient(to right, #FF9A8B, #FF6F61); /* 温暖的渐变背景 */
+    color: #fff;
+    padding: 20px;
     text-align: center;
 }
 
 .header h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 10px;
 }
 
@@ -29,14 +34,14 @@ nav {
 }
 
 nav a {
-    color: #333;
+    color: #fff;
     text-decoration: none;
     padding: 10px;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: #FF6F61; /* 橙色悬停效果 */
+    color: #FFD54F; /* 黄色悬停效果 */
 }
 
 .container {
@@ -46,7 +51,7 @@ nav a:hover {
 }
 
 .hero {
-    background: #FFE5D9; /* 柔和背景色 */
+    background: #FFE5E5; /* 柔和的粉色背景 */
     padding: 20px;
     text-align: center;
     border-radius: 10px;
@@ -65,11 +70,12 @@ nav a:hover {
 .button {
     display: inline-block;
     padding: 10px 20px;
-    background: #FF6F61;
+    background: #FF6F61; /* 橙色按钮 */
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    border: none;
 }
 
 .button:hover {
@@ -93,6 +99,7 @@ nav a:hover {
 
 .service-item h3 {
     margin-bottom: 10px;
+    color: #FF6F61; /* 标题颜色 */
 }
 
 .section {
@@ -100,7 +107,7 @@ nav a:hover {
 }
 
 .contact-form {
-    background: #FFF6F6; /* 温馨背景色 */
+    background: #FFE4E1; /* 柔和的浅粉色背景 */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -113,6 +120,7 @@ nav a:hover {
 .form-group label {
     display: block;
     margin-bottom: 5px;
+    color: #333; /* 表单标签颜色 */
 }
 
 .form-group input,
@@ -129,19 +137,18 @@ nav a:hover {
 }
 
 .button {
-    background: #FF6F61;
-    border: none;
+    background: #FF6F61; /* 橙色按钮 */
 }
 
 .button:hover {
-    background: #FF4C4C;
+    background: #FF4C4C; /* 深橙色悬停效果 */
 }
 
 .footer {
-    background: #FFDDC1; /* 温暖背景色 */
+    background: #FF9A8B; /* 温暖的粉色背景 */
     text-align: center;
     padding: 10px;
-    color: #333;
+    color: #fff;
 }
 
 .contact-icons {
@@ -163,7 +170,7 @@ nav a:hover {
 }
 
 .contact-icons a:hover {
-    background: #FF4C4C;
+    background: #FF4C4C; /* 深橙色悬停效果 */
 }
 
 /* 响应式设计 */
