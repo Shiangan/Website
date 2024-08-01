@@ -6,94 +6,73 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif; /* 使用现代字体 */
+    background-color: #f7f4f1;
     color: #333;
     line-height: 1.6;
 }
 
-/* Header and Navbar styles */
-.header, .footer {
-    background-color: #333;
+.header {
+    background-color: #7d4c3f; /* 温暖的背景色 */
     color: #fff;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .header h1 {
+    font-family: 'Merriweather', serif; /* 特色字体 */
+    font-size: 2.5em;
     margin-bottom: 10px;
 }
 
 .navbar {
-    display: flex;
-    justify-content: center;
-    background-color: #444;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
 }
 
 .navbar a {
-    color: white;
-    padding: 14px 20px;
+    color: #fff;
     text-decoration: none;
-    text-align: center;
-    transition: background-color 0.3s;
+    margin: 0 15px;
+    font-size: 1.1em;
+    font-family: 'Roboto', sans-serif;
+    transition: color 0.3s;
 }
 
 .navbar a:hover {
-    background-color: #ff6600;
+    color: #ff8c00; /* 悬停效果颜色 */
 }
 
-/* Container and Section styles */
 .container {
-    width: 80%;
+    width: 90%;
+    max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .section {
-    margin-bottom: 40px;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-.section.visible {
-    opacity: 1;
-    transform: translateY(0);
+    margin-bottom: 30px;
 }
 
 .section h2 {
-    border-bottom: 2px solid #ff6600;
+    font-family: 'Merriweather', serif; /* 特色字体 */
+    border-bottom: 2px solid #ff8c00;
     padding-bottom: 10px;
     margin-bottom: 20px;
-    font-size: 1.8em;
+    color: #7d4c3f; /* 标题颜色 */
 }
 
-.section p {
-    margin-bottom: 20px;
-    font-size: 1.1em;
+ul {
+    list-style: none;
 }
 
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #ff6600;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s;
+ul li {
+    margin-bottom: 10px;
 }
 
-.cta-button:hover {
-    background-color: #cc5200;
-}
-
-/* Form styles */
 .contact-form {
     margin-top: 20px;
 }
@@ -105,6 +84,7 @@ body {
 .form-group label {
     display: block;
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
 .form-group input, .form-group textarea {
@@ -119,7 +99,7 @@ body {
     padding: 10px 20px;
     font-size: 16px;
     color: #fff;
-    background-color: #ff6600;
+    background-color: #ff8c00;
     text-decoration: none;
     border-radius: 4px;
     border: none;
@@ -128,43 +108,42 @@ body {
 }
 
 .button:hover {
-    background-color: #cc5200;
+    background-color: #e07b00;
 }
 
-/* Contact Icons styles */
+.footer {
+    background-color: #7d4c3f;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -4px 6px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
 .contact-icons {
     position: fixed;
-    right: 20px;
     bottom: 20px;
+    right: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .contact-icons a {
     display: block;
-    margin: 5px 0;
-    color: #fff;
-    background-color: #ff6600;
-    border-radius: 50%;
-    padding: 10px;
-    text-align: center;
+    margin-bottom: 10px;
+    color: #7d4c3f;
     font-size: 24px;
     text-decoration: none;
-    width: 50px;
-    height: 50px;
-    line-height: 30px;
-    transition: background-color 0.3s;
+    transition: color 0.3s;
 }
 
 .contact-icons a:hover {
-    background-color: #cc5200;
-}
-
-.contact-icons .phone {
-    background-color: #34b7f1;
-}
-
-.contact-icons .line {
-    background-color: #00c300;
+    color: #ff8c00;
 }
