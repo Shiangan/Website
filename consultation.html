@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>免費諮詢 - 祥安生命有限公司</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>祥安生命有限公司</h1>
+        <nav>
+            <a href="index.html">首頁</a>
+            <a href="funeral-services.html">禮儀服務</a>
+            <a href="platform.html">喬安網路平台</a>
+            <a href="flower-order.html">花籃訂購</a>
+            <a href="fruit-order.html">水果籃訂購</a>
+            <a href="consultation.html">免費諮詢</a>
+            <a href="contact.html">聯繫我們</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="consultation-form">
+            <h2>免費諮詢</h2>
+            <p>我們提供免費的初步諮詢服務，幫助您了解我們的服務和報價。請填寫下面的表單與我們聯繫，我們將在24小時內回覆您。</p>
+            <form action="submit_consultation.php" method="POST">
+                <div class="form-group">
+                    <label for="name">姓名</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">電子郵件</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">電話</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">訊息</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="button">提交諮詢</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 祥安生命有限公司. All rights reserved.</p>
+    </footer>
+
+    <div class="contact-icons">
+        <a href="tel:+0978583699" class="phone">📞</a>
+        <a href="https://line.me/ti/p/@yourlineid" class="line">LINE</a>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
