@@ -4,85 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>禮儀服務 - 祥安生命有限公司</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .header, .footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        .header a, .footer a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-            transition: color 0.3s;
-        }
-        .header a:hover, .footer a:hover {
-            color: #ff6600;
-        }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        .section h2 {
-            border-bottom: 2px solid #ff6600;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-        .contact-form {
-            margin-top: 20px;
-        }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        .form-group input, .form-group textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 16px;
-            color: #fff;
-            background-color: #ff6600;
-            text-decoration: none;
-            border-radius: 4px;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        .button:hover {
-            background-color
-                <a href="funeral-services.html">禮儀服務</a> |
-            <a href="platform.html">喬安網路平台</a> |
-            <a href="flower-order.html">花籃訂購</a> |
-            <a href="fruit-order.html">水果籃訂購</a> |
-            <a href="obituary.html">雲端電子訃聞</a> |
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>祥安生命有限公司</h1>
+        <nav>
+            <a href="index.html">首頁</a>
+            <a href="funeral-services.html">禮儀服務</a>
+            <a href="platform.html">喬安網路平台</a>
+            <a href="flower-order.html">花籃訂購</a>
+            <a href="fruit-order.html">水果籃訂購</a>
+            <a href="consultation.html">免費諮詢</a>
             <a href="contact.html">聯繫我們</a>
         </nav>
-    </div>
+    </header>
 
-    <div class="container">
-        <div class="section">
-            <h2>我們的服務</h2>
+    <main class="container">
+        <section class="services-details">
+            <h2>我們的禮儀服務</h2>
             <p>我們提供全面而專業的禮儀服務，包括：</p>
             <ul>
                 <li>葬禮策劃和安排</li>
@@ -92,38 +32,18 @@
                 <li>其他相關服務</li>
             </ul>
             <p>我們的專業團隊將為您提供最貼心的服務，確保每一個細節都完美無瑕。</p>
-        </div>
+        </section>
+    </main>
 
-        <div class="section">
-            <h2>免費諮詢</h2>
-            <p>我們提供免費的初步諮詢服務，幫助您了解我們的服務和報價。請填寫下面的表單與我們聯繫，我們將在24小時內回覆您。</p>
-            <div class="contact-form">
-                <form action="submit_form.php" method="POST">
-                    <div class="form-group">
-                        <label for="name">姓名</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">電子郵件</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">訊息</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
-                    </div>
-                    <button type="submit" class="button">提交諮詢</button>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer">
+    <footer class="footer">
         <p>© 2024 祥安生命有限公司. All rights reserved.</p>
-    </div>
+    </footer>
 
     <div class="contact-icons">
         <a href="tel:+0978583699" class="phone">📞</a>
         <a href="https://line.me/ti/p/@yourlineid" class="line">LINE</a>
     </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
