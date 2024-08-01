@@ -10,43 +10,120 @@
             font-family: 'Noto Sans TC', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f4f1ea; /* 柔和米色 */
             color: #333;
         }
         .header, .footer {
-            background-color: #f5deb3; /* 淡米色 */
-            color: #5b3a29; /* 深棕色 */
+            background-color: #6a4b41; /* 深棕色 */
+            color: #fff;
             padding: 20px;
             text-align: center;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
         .header a, .footer a {
-            color: #5b3a29;
+            color: #fff;
             text-decoration: none;
             margin: 0 10px;
             transition: color 0.3s;
         }
         .header a:hover, .footer a:hover {
-            color: #d18f4a; /* 橙色 */
+            color: #d4af37; /* 黄金色 */
         }
         .container {
-            width: 80%;
-            margin: 20px auto;
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
             padding: 20px;
             background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+            position: relative;
+        }
+        .hero {
+            background-image: url('images/hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+        }
+        .section {
+            margin-bottom: 30px;
         }
         .section h2 {
-            border-bottom: 2px solid #d18f4a;
+            border-bottom: 3px solid #6a4b41;
             padding-bottom: 10px;
             margin-bottom: 20px;
-            color: #5b3a29;
+            color: #6a4b41;
+            position: relative;
+        }
+        .section h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: #d4af37; /* 黄金色 */
+            position: absolute;
+            bottom: -10px;
+            left: 0;
         }
         .content {
-            line-height: 1.6;
+            line-height: 1.8;
         }
-        .footer p {
+        .photo {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .photo:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #d4af37; /* 黄金色 */
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #bfa432;
+        }
+        .map {
+            width: 100%;
+            height: 400px;
+            border: 0;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+            margin-top: 30px;
+        }
+        .comments {
+            margin-top: 30px;
+        }
+        .comment {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .comment p {
             margin: 0;
         }
     </style>
@@ -66,17 +143,41 @@
     </header>
 
     <main class="container">
+        <section class="hero">
+            <h1>悼念佛教徒</h1>
+            <p>以佛教的方式紀念和追思逝者</p>
+        </section>
+
         <section class="section">
             <h2>佛教訃聞</h2>
             <div class="content">
-                <p>我們謹以此訃聞，向逝者表示最誠摯的悼念。以下內容適用於佛教徒的訃聞，以表達對逝者的追思和祝福：</p>
+                <img src="images/obituary-photo.jpg" alt="逝者照片" class="photo">
+                <p>我們以虔誠的心，向逝者表達最深切的悼念。以下內容適用於佛教徒的訃聞，以最莊嚴的方式紀念逝者：</p>
                 <p><strong>姓名：</strong> 張三</p>
                 <p><strong>逝世日期：</strong> 2024年8月1日</p>
                 <p><strong>葬禮日期：</strong> 2024年8月5日</p>
-                <p><strong>追悼詞：</strong> 我們的親愛的張三，於佛教教義中，您將重獲新生，走向更光明的未來。我們深信，您的靈魂將在佛祖的庇佑下得到安息。我們懷著無比悲痛的心情，向您告別，願您往生極樂世界，安享無量福報。</p>
-                <p><strong>佛教經文：</strong> 「願以此功德，普及於一切。我等與眾生，皆共成佛道。」</p>
-                <p>若您想要了解更多細節，請聯繫我們，我們將為您提供更多幫助。</p>
+                <p><strong>追悼詞：</strong> 張三，您以慈悲和智慧，點亮了我們的生命。您的教誨將永遠在我們心中。願您在西方極樂世界中安息，我們會永遠懷念您。</p>
+                <p><strong>經文引用：</strong> 「一切有為法，如夢幻泡影，如露亦如電，應作如是觀。」</p>
+                <p>如欲查看完整樣式，請點擊下方按鈕進行登入。每則訃聞生成費用為 $100。</p>
+                <a href="login.html" class="button">登入查看樣式</a>
             </div>
+        </section>
+
+        <section class="section">
+            <h2>追思留言</h2>
+            <div class="comments">
+                <div class="comment">
+                    <p><strong>李四：</strong> 張三的離世讓我深感痛心，他的慈悲與智慧永遠會在我們心中。</p>
+                </div>
+                <div class="comment">
+                    <p><strong>王五：</strong> 感謝張三的教誨與陪伴，願他在極樂世界中得到安息。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>位置地圖</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.203185642211!2d-73.95571168425752!3d40.773598979326595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2547b1c0e8f6b%3A0x6b7e51d8e7f5b742!2sApple%20Store!5e0!3m2!1sen!2sus!4v1598908692486!5m2!1sen!2sus" class="map" allowfullscreen="" loading="lazy"></iframe>
         </section>
     </main>
 
@@ -86,7 +187,7 @@
 
     <div class="contact-icons">
         <a href="tel:+0978583699" class="phone">📞</a>
-        <a href="https://line.me/ti/p/@yourlineid" class="line">LINE</a>
+        <a href="https://line.me/ti/p/@yourlineid"class="line">LINE</a>
     </div>
 </body>
 </html>
