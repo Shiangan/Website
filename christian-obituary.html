@@ -3,108 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>基督教訃聞範例 - 祥安生命有限公司</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <title>基督教悼文 - 祥安生命有限公司</title>
     <style>
         body {
-            font-family: 'Noto Sans TC', sans-serif;
+            font-family: 'Noto Sans TC', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+            background: #eaeaea;
             color: #333;
         }
         .header, .footer {
-            background-color: #003366; /* 深蓝色 */
-            color: #fff;
+            background: rgba(255, 255, 255, 0.8); /* 半透明底色 */
+            color: #333;
             padding: 20px;
             text-align: center;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px); /* 背景模糊效果 */
         }
         .header a, .footer a {
-            color: #fff;
+            color: #333;
             text-decoration: none;
             margin: 0 10px;
             transition: color 0.3s;
         }
         .header a:hover, .footer a:hover {
-            color: #ffcc99; /* 淡橙色 */
+            color: #3498db;
         }
         .container {
             width: 80%;
             margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
+            background: #fff;
+            border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             position: relative;
-            overflow: hidden;
+            z-index: 1;
+        }
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('christian-background.jpg'); /* 底图 */
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+            opacity: 0.2; /* 底图透明度 */
         }
         .section h2 {
-            border-bottom: 2px solid #003366;
+            border-bottom: 2px solid #3498db;
             padding-bottom: 10px;
             margin-bottom: 20px;
-            color: #003366;
-            position: relative;
         }
-        .section h2::after {
-            content: '';
-            display: block;
-            width: 50px;
-            height: 4px;
-            background: #ffcc99; /* 淡橙色 */
-            position: absolute;
-            bottom: -10px;
-            left: 0;
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
         }
-        .content {
-            line-height: 1.6;
-        }
-        .photo {
+        .image-container img {
             max-width: 100%;
             border-radius: 8px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-            transition: transform 0.3s;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-        .photo:hover {
-            transform: scale(1.05);
+                    animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
         .button {
             display: inline-block;
             padding: 10px 20px;
             font-size: 16px;
             color: #fff;
-            background-color: #ff6600;
+            background-color: #3498db;
             text-decoration: none;
             border-radius: 4px;
             transition: background-color 0.3s;
         }
         .button:hover {
-            background-color: #cc5200;
+            background-color: #2980b9;
         }
-        .map {
-            width: 100%;
-            height: 300px;
-            border: 0;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        .map-container {
             margin-top: 20px;
-        }
-        .comments {
-            margin-top: 20px;
-        }
-        .comment {
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 10px;
-            margin-bottom: 10px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <header class="header">
-        <h1>祥安生命有限公司 - 基督教訃聞範例</h1>
+    <div class="header">
+        <h1>祥安生命有限公司 - 基督教悼文</h1>
         <nav>
             <a href="index.html">首頁</a> |
             <a href="funeral-services.html">禮儀服務</a> |
@@ -114,43 +102,28 @@
             <a href="obituary.html">雲端電子訃聞</a> |
             <a href="contact.html">聯繫我們</a>
         </nav>
-    </header>
+    </div>
 
-    <main class="container">
-        <section class="section">
-            <h2>基督教訃聞</h2>
-            <div class="content">
-                <img src="images/obituary-photo.jpg" alt="逝者照片" class="photo">
-                <p>我們在此謹以基督教的方式，向逝者表達最深切的悼念。以下內容適用於基督教徒的訃聞，旨在以最崇高的方式紀念逝者：</p>
-                <p><strong>姓名：</strong> 李四</p>
-                <p><strong>逝世日期：</strong> 2024年8月1日</p>
-                <p><strong>葬禮日期：</strong> 2024年8月5日</p>
-                <p><strong>追悼詞：</strong> 我們的親愛的李四，您在主的懷抱中，已經得到了永恆的安息。您的一生充滿了對主的愛與服務，我們深信您已在天國得到了榮耀與平安。我們懷著感激與悲痛的心情，向您告別。願主的光輝永遠照耀您。</p>
-                <p><strong>經文引用：</strong> 「我必賜給他永生，他必永不滅亡，誰也不能把他從我的手裡奪去。」（約翰福音 10:28）</p>
-                <p>若您對我們的服務有興趣，請點擊下方按鈕進行登入並查看完整樣式。每則訃聞生成費用為 $100。</p>
+    <div class="container">
+        <div class="background-image"></div>
+        <div class="section animated-section">
+            <h2>基督教悼文範例</h2>
+            <div class="image-container">
+                <img src="christian-church.jpg" alt="基督教教堂">
             </div>
-
-            <div class="comments">
-                <h3>追思留言</h3>
-                <div class="comment">
-                    <p><strong>張三：</strong> 李四是我最親愛的朋友，他的離世讓我深感悲痛。我會永遠記住我們的美好時光。</p>
-                </div>
-                <div class="comment">
-                    <p><strong>王五：</strong> 感謝主給予我們如此美好的人生。我會為李四祈禱，願他在天國安息。</p>
-                </div>
+            <p>本悼文以基督教儀式為基礎，提供溫馨的追思和祝福內容，讓親友以最尊敬的方式紀念故人。</p>
+            <p>您可以自訂圖片、文字和追思內容，我們會為您提供最貼心的設計和服務。</p>
+            <div class="map-container">
+                <h3>悼文地點</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.2540528929496!2d121.56413781579417!3d25.027842983358873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442d8c0bce44b57%3A0x78ac888f2053dc09!2s%E5%8F%B0%E5%8C%97%E5%8F%96%E5%BE%97%E6%9B%B4%E5%BE%8C!5e0!3m2!1szh-TW!2stw!4v1631704538127!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
+            <a href="#" class="button">查看更多樣式</a>
+        </div>
+    </div>
 
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.203185642211!2d-73.95571168425752!3d40.773598979326595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2547b1c0e8f6b%3A0x6b7e51d8e7f5b742!2sApple%20Store!5e0!3m2!1sen!2sus!4v1598908692486!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-
-            <a href="login.html" class="button">登入查看樣式</a>
-        </section>
-    </main>
-
-    <footer class="footer">
+    <div class="footer">
         <p>© 2024 祥安生命有限公司. All rights reserved.</p>
-    </footer>
+    </div>
 
     <div class="contact-icons">
         <a href="tel:+0978583699" class="phone">📞</a>
