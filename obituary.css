@@ -1,0 +1,98 @@
+/* 引入 Google Fonts */
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f4f4; /* 温暖的背景色 */
+    color: #333;
+}
+
+.header {
+    background-color: #4a4a4a; /* 深灰色调 */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.header a:hover {
+    color: #ff9900; /* 暖色调 */
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.section h2 {
+    border-bottom: 2px solid #ff9900; /* 暖色调边框 */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.sample-obituaries {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sample-obituary {
+    width: calc(50% - 20px);
+    padding: 20px;
+    background-color: #fff; /* 更柔和的背景色 */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.sample-obituary h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff9900; /* 暖色调背景 */
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #cc7700; /* 变暗的暖色调 */
+}
+
+.footer {
+    background-color: #4a4a4a; /* 深灰色调 */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.contact-icons a {
+    color: #ff9900;
+    font-size: 24px;
+    margin-left: 10px;
+    text-decoration: none;
+}
