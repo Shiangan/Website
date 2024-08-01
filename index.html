@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>祥安生命有限公司 - 專業禮儀服務</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .header, .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .header a, .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .header a:hover, .footer a:hover {
+            color: #ff6600;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .section {
+            margin-bottom: 40px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .section h2 {
+            border-bottom: 2px solid #ff6600;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #ff6600;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #cc5200;
+        }
+        .contact-icons {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact-icons a {
+            display: block;
+            margin: 5px 0;
+            color: #fff;
+            background-color: #ff6600;
+            border-radius: 50%;
+            padding: 10px;
+            text-align: center;
+            font-size: 24px;
+            text-decoration: none;
+            width: 50px;
+            height: 50px;
+            line-height: 30px;
+            transition: background-color 0.3s;
+        }
+        .contact-icons a:hover {
+            background-color: #cc5200;
+        }
+        .contact-icons .phone {
+            background-color: #34b7f1;
+        }
+        .contact-icons .line {
+            background-color: #00c300;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>祥安生命有限公司</h1>
+        <nav>
+            <a href="index.html">首頁</a> | 
+            <a href="funeral-services.html">禮儀服務</a> |
+            <a href="platform.html">喬安網路平台</a> |
+            <a href="flower-order.html">花籃訂購</a> |
+            <a href="fruit-order.html">水果籃訂購</a> |
+            <a href="obituary.html">雲端電子訃聞</a> |
+            <a href="contact.html">聯繫我們</a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>專業禮儀服務</h2>
+            <p>祥安生命有限公司提供全面而專業的禮儀服務，幫助您在困難時期提供最體面的告別。我們的服務包括葬禮策劃、場地布置和其他相關服務。</p>
+            <a href="funeral-services.html" class="cta-button">了解更多</a>
+        </div>
+
+        <div class="section">
+            <h2>限時優惠</h2>
+            <p>立即聯繫我們享受限時優惠！我們提供免費的初步諮詢，幫助您了解我們的服務和價格。</p>
+            <a href="contact.html" class="cta-button">立即聯繫</a>
+        </div>
+
+        <div class="section">
+            <h2>其他服務</h2>
+            <p>除了禮儀服務，我們還提供喬安網路平台的解決方案、花籃和水果籃的訂購服務。請點擊下面的鏈接了解更多詳細信息。</p>
+            <a href="platform.html" class="cta-button">喬安網路平台</a>
+            <a href="flower-order.html" class="cta-button">花籃訂購</a>
+            <a href="fruit-order.html" class="cta-button">水果籃訂購</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 祥安生命有限公司. All rights reserved.</p>
+    </div>
+
+    <div class="contact-icons">
+        <a href="tel:+0978583699" class="phone">📞</a>
+        <a href="https://line.me/ti/p/@yourlineid" class="line">LINE</a>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function (section) {
+                section.classList.add('visible');
+            });
+        });
+    </script>
+</body>
+</html>
