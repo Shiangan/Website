@@ -3,82 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>祥安生命有限公司</title>
+    <title>祥安生命有限公司 - 首页</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="header">
+    <header class="header">
         <h1>祥安生命有限公司</h1>
-        <div class="navbar">
-            <a href="#services">禮儀服務</a>
-            <a href="#platform">喬安網路平台</a>
-            <a href="#flower-order">花籃訂購</a>
-            <a href="#fruit-order">水果籃訂購</a>
-            <a href="#contact">聯繫我們</a>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="section" id="services">
-            <h2>我們的服務</h2>
-            <p>我們提供全面而專業的禮儀服務，包括：</p>
-            <ul>
-                <li>葬禮策劃和安排</li>
-                <li>場地布置和裝飾</li>
-                <li>遺體接送和護送</li>
-                <li>葬禮主持和服務</li>
-                <li>其他相關服務</li>
-            </ul>
-            <p>我們的專業團隊將為您提供最貼心的服務，確保每一個細節都完美無瑕。</p>
-        </div>
-
-        <div class="section" id="platform">
-            <h2>喬安網路平台</h2>
-            <p>喬安網路平台提供各種保險服務，專為老年人和被拒保客戶設計。我們的目標是為每個人提供平等的保險機會。</p>
-        </div>
-
-        <div class="section" id="flower-order">
-            <h2>花籃訂購</h2>
-            <p>我們提供各種精美的花籃供您選擇，適合各種場合。</p>
-        </div>
-
-        <div class="section" id="fruit-order">
-            <h2>水果籃訂購</h2>
-            <p>我們的水果籃新鮮美味，適合作為禮品或供奉使用。</p>
-        </div>
-
-        <div class="section" id="contact">
-            <h2>免費諮詢</h2>
-            <p>我們提供免費的初步諮詢服務，幫助您了解我們的服務和報價。請填寫下面的表單與我們聯繫，我們將在24小時內回覆您。</p>
-            <div class="contact-form">
-                <form action="submit_form.php" method="POST">
-                    <div class="form-group">
-                        <label for="name">姓名</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">電子郵件</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">訊息</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
-                    </div>
-                    <button type="submit" class="button">提交諮詢</button>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer">
+        <nav>
+            <a href="index.html">首页</a>
+            <a href="funeral-services.html">礼仪服务</a>
+            <a href="platform.html">喬安网路平台</a>
+            <a href="flower-order.html">花篮订购</a>
+            <a href="fruit-order.html">水果篮订购</a>
+            <a href="contact.html">联系我</a>
+        </nav>
+    </header>
+    
+    <main class="container">
+        <section class="section">
+            <h2>欢迎来到祥安生命有限公司</h2>
+            <p>我们为您提供专业的礼仪服务，帮助您在困境中给予最温馨的告别。</p>
+            <a href="funeral-services.html" class="button">了解更多礼仪服务</a>
+        </section>
+        
+        <section class="section">
+            <h2>限时优惠</h2>
+            <p>立即联系我们，享受我们的限时优惠。免费初步咨询等您来体验。</p>
+            <a href="contact.html" class="button">立即咨询</a>
+        </section>
+        
+        <section class="section">
+            <h2>我们的服务</h2>
+            <p>除了礼仪服务，我们还提供喬安网路平台的解决方案、花篮和水果篮的订购服务。</p>
+            <a href="platform.html" class="button">喬安网路平台</a>
+            <a href="flower-order.html" class="button">花篮订购</a>
+            <a href="fruit-order.html" class="button">水果篮订购</a>
+        </section>
+    </main>
+    
+    <footer class="footer">
         <p>© 2024 祥安生命有限公司. All rights reserved.</p>
-    </div>
-
+    </footer>
+    
     <div class="contact-icons">
         <a href="tel:+0978583699" class="phone">📞</a>
         <a href="https://line.me/ti/p/@yourlineid" class="line">LINE</a>
     </div>
-
+    
     <script src="script.js"></script>
 </body>
 </html>
