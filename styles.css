@@ -1,141 +1,131 @@
-/* 全局设置 */
-body {
-    font-family: 'Noto Sans', Arial, sans-serif;
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, form {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #f5f7f9, #e1e8ed);
-    color: #333;
+    box-sizing: border-box;
 }
 
-/* 页头和页脚 */
-.header, .footer {
-    background: linear-gradient(to right, #f6d365, #fda085);
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.header a, .footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-    transition: color 0.3s;
-}
-
-.header a:hover, .footer a:hover {
-    color: #cc6b73;
-}
-
-/* 容器 */
-.container {
-    width: 80%;
-    margin: 20px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-/* 内容区域 */
-.section h2 {
-    border-bottom: 2px solid #ff6f61;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    color: #ff6f61;
-}
-
-.section p, .section ul {
+body {
+    font-family: 'Noto Sans TC', sans-serif;
     line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
 }
 
-.section ul {
-    padding-left: 20px;
+.header {
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    padding: 1rem;
+    color: #fff;
+    text-align: center;
 }
 
-.section ul li {
-    margin-bottom: 10px;
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
 }
 
-/* 按钮 */
+nav a {
+    color: #fff;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.section {
+    background: #fff;
+    padding: 2rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
 .button {
     display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 0.75rem 1.5rem;
     color: #fff;
-    background: linear-gradient(to right, #ff6f61, #ff9a8b);
+    background: #f76c6c;
     text-decoration: none;
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    border-radius: 5px;
+    text-align: center;
 }
 
 .button:hover {
-    background: linear-gradient(to right, #ff9a8b, #ff6f61);
+    background: #f36f6f;
 }
 
-/* 表单 */
+.contact-info p {
+    margin-bottom: 0.5rem;
+}
+
 .contact-form {
-    margin-top: 20px;
+    margin-top: 1rem;
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 
 .form-group label {
     display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+    margin-bottom: 0.5rem;
 }
 
-.form-group input, .form-group textarea {
+.form-group input, .form-group textarea, .form-group select {
     width: 100%;
-    padding: 10px;
+    padding: 0.75rem;
     border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box;
+    border-radius: 5px;
 }
 
-.form-group textarea {
-    resize: vertical;
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-/* 联系方式图标 */
 .contact-icons {
     position: fixed;
-    right: 20px;
-    bottom: 20px;
+    bottom: 10px;
+    right: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .contact-icons a {
     display: block;
-    margin: 5px 0;
+    background: #f76c6c;
     color: #fff;
-    background: linear-gradient(to right, #ff6f61, #ff9a8b);
     border-radius: 50%;
-    padding: 10px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
     text-align: center;
-    font-size: 24px;
+    margin-bottom: 10px;
     text-decoration: none;
-    width: 50px;
-    height: 50px;
-    line-height: 30px;
-    transition: background 0.3s;
 }
 
-.contact-icons a:hover {
-    background: linear-gradient(to right, #ff9a8b, #ff6f61);
+.contact-icons a.phone {
+    background: #4caf50;
 }
 
-.contact-icons .phone {
-    background: #34b7f1;
-}
-
-.contact-icons .line {
-    background: #00c300;
+.contact-icons a.line {
+    background: #00bfae;
 }
